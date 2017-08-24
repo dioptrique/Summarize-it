@@ -5,17 +5,19 @@ import requests
 from slacker import Slacker
 import json
 import os
-from config import *
+from config import * 
 print "after import"
 slack = Slacker(keys["slack"])
 print "Slacker interfaced"
 app = Flask(__name__)
+print "Flask instance created"
 @app.route("/slack", methods=['POST'])
 def slackReq():
 	print "handling slack request to main="
 	req_data = request.form
 	print "obtained request data"
 	channel_id = req_data.getlist('channel_id')
+	print "Get channel id"
 	print "Get channel id"
 	response =  slack.channels.history(channel_id)
 	print "get convo log"
