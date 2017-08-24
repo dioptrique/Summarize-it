@@ -13,6 +13,7 @@ app = Flask(__name__)
 print "Flask instance created"
 @app.route("/slack", methods=['POST'])
 def slackReq():
+	slack.chat.post_message('#general', 'Hello fellow slackers!')
 	print "handling slack request to main="
 	req_data = request.form
 	print "obtained request data"
