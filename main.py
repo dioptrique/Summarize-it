@@ -18,8 +18,8 @@ def slackReq():
 	print "obtained request data"
 	channel_id = req_data.getlist('channel_id')
 	print "Get channel id"
-	print "Get channel id"
-	print "Get channel id"
+	print "Get channel id 2"
+	print "Get channel id 3"
 	response =  slack.channels.history(channel_id)
 	print "get convo log"
 	a = (response.body)
