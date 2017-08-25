@@ -7,7 +7,7 @@ import json
 import os
 from config import * 
 print "after import"
-#slack = Slacker(keys["slack"]) lolol
+#slack = Slacker(keys["slack"]) lololo
 slack = Slacker("ozXAkkPyIdiy9P3zkl0tqbFe")
 print "Slacker interfaced"
 app = Flask(__name__)
