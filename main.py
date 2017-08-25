@@ -8,7 +8,7 @@ import os
 from config import * 
 print "after import"
 #slack = Slacker(keys["slack"])
-slack = Slacker("ozXAkkPyIdiy9P3zkl0tqbFe")
+slack = Slacker("xoxp-230558855988-230558856164-231615460626-1753fc61f518e3c7c411b67df46fed8f")
 print "Slacker interfaced"
 app = Flask(__name__)
 print "Flask instance created"
